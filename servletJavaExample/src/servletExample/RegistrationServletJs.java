@@ -57,7 +57,7 @@ public class RegistrationServletJs extends HttpServlet {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sys", "root", "ThisIsMe23@");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sys", "root", "######");
 			
 			PreparedStatement ps = con.prepareStatement("insert into tb_customer (FirstName, LastName, Dob, Address, Phone) values(?,?,?,?,?)") ;
 			ps.setString(1, firstName);
